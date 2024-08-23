@@ -34,5 +34,7 @@ abstract class Forma {
     
     abstract void calcularArea();
     
+    public void calcularArea(String mensaje){
+    }
     
 }
