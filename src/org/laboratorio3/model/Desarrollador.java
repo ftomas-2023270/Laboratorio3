@@ -23,7 +23,7 @@ public class Desarrollador extends Empleado{
     public void setLenguajeProgramacion(String lenguajeProgramacion) {
         this.lenguajeProgramacion = lenguajeProgramacion;
     }
-
+    
     @Override
     public void trabajar() {
         System.out.println("El desarrollador: " + getNombre() + " trabaja con el lenguaje"
@@ -41,5 +41,11 @@ public class Desarrollador extends Empleado{
                 + " proyecto " + proyecto + "el lenguaje de programacion de  " 
                 + getLenguajeProgramacion());
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "{lenguajeProgramacion=" + lenguajeProgramacion + '}';
+    }
+    
     
 }

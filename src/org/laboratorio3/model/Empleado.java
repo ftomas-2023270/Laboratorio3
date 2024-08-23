@@ -1,7 +1,7 @@
 package org.laboratorio3.model;
 
 
-abstract class Empleado {
+public abstract class Empleado {
     private String nombre;
     private int edad;
     private int salario;
@@ -39,10 +39,17 @@ abstract class Empleado {
         this.salario = salario;
     }
     
-    abstract void trabajar();
+    public abstract void trabajar();
     
     public void trabajar(int horas){
         System.out.println("El empleado: " + getNombre() + " trabaja el numero de"
                 + "horas de " + horas);
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{" + "nombre=" + nombre + ", edad=" + edad + ", salario=" + salario + '}';
+    }
+    
+    
 }

@@ -41,5 +41,11 @@ public class Tester extends Empleado{
         + herramienta + " para el proyecto de " + proyecto + "en la preuba de " 
                 + getTipoPruebas());
     }
+
+    @Override
+    public String toString() {
+        return "Tester{" + "tipoPruebas=" + tipoPruebas + '}';
+    }
  
+    
 }
