@@ -9,14 +9,18 @@ package org.laboratorio3.model;
  *
  * @author informatica
  */
-public class Triangulo extends Forma{
+public class Cuadrado extends Forma{
     private int base, altura;
 
-    public Triangulo() {
+    public Cuadrado() {
     }
 
+    public Cuadrado(int base, int altura) {
+        this.base = base;
+        this.altura = altura;
+    }
 
-    public Triangulo(int base, int altura, String color) {
+    public Cuadrado(int base, int altura, String color) {
         super(color);
         this.base = base;
         this.altura = altura;
@@ -40,15 +44,15 @@ public class Triangulo extends Forma{
 
     @Override
     public String toString() {
-        return "Triangulo{" + "base=" + base + ", altura=" + altura + '}';
+        return "Cuadrado{" + "base=" + base + ", altura=" + altura + '}';
     }
-    
-    
+
     @Override
     void calcularArea() {
     }
- 
+    
     public void calcularArea(double ajuste){
         
     }
+   
 }
