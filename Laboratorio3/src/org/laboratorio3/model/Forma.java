@@ -9,6 +9,30 @@ package org.laboratorio3.model;
  *
  * @author informatica
  */
-public class Forma {
+abstract class Forma {
+    private String color;
+
+    public Forma() {
+    }
+    
+    public Forma(String color) {
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Forma{" + "color=" + color + '}';
+    }
+    
+    abstract void calcularArea();
+    
     
 }
