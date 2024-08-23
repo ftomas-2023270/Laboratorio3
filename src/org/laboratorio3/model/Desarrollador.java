@@ -25,8 +25,21 @@ public class Desarrollador extends Empleado{
     }
 
     @Override
-    void trabajar() {
-        String proyecto;
+    public void trabajar() {
+        System.out.println("El desarrollador: " + getNombre() + " trabaja con el lenguaje"
+                + " de programacion de " + getLenguajeProgramacion());
+    }
+    
+    @Override
+    public void trabajar(int horas){
+        System.out.print("El desarrollador: " + getNombre() + " trabaja el numero de horas"
+                + "de " + horas);
+    }
+    
+    public void trabajar(String proyecto){
+        System.out.println("El desarrollador: " + getNombre() + " utiliza para el"
+                + " proyecto " + proyecto + "el lenguaje de programacion de  " 
+                + getLenguajeProgramacion());
     }
     
 }
