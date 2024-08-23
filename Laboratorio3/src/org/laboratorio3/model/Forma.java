@@ -9,7 +9,7 @@ package org.laboratorio3.model;
  *
  * @author informatica
  */
-abstract class Forma {
+public abstract class Forma {
     private String color;
 
     public Forma() {
